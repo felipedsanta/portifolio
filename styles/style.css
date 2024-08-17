@@ -15,14 +15,14 @@
     padding: 0;
 }
 
-body {
+html, body {
     box-sizing: border-box;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria)
 }
 
 .cabecalho {
-    padding: 2% 0 0 15%;
+    padding: 2% 0% 0% 15%;
 }
 
 .cabecalho__menu {
@@ -47,6 +47,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .apresentacao__conteudo {
@@ -112,6 +113,7 @@ body {
 }
 
 .rodape {
+    margin-top: 6.5em;
     padding: 24px;
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
@@ -124,7 +126,7 @@ body {
 @media (max-width: 1200px) {
     
     .cabecalho {
-        padding: 6%;
+        padding: 5%;
     }
 
     .cabecalho__menu {
