@@ -21,13 +21,15 @@ html, body {
     box-sizing: border-box;
     background: linear-gradient(to bottom right, var(--cor-primaria), #3C5979);
     color: var(--cor-secundaria);
-    height: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 .container{
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 .cabecalho {
@@ -175,6 +177,10 @@ html, body {
 
     .apresentacao__imagem {
         width: 60%;
+    }
+
+    .projeto__imagem{
+        width: 80%;
     }
     
 }
