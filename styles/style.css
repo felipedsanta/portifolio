@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root {
-    --cor-primaria: #0F0E0E;
-    --cor-secundaria: #EEEEEE;
-    --cor-terciaria: #8B9A46;
-    --cor-hover: #541212;
+    --cor-primaria: #243B55;
+    --cor-secundaria: #F5F5F5;
+    --cor-terciaria: #FF5722;
+    --cor-terciaria-transparente: rgba(245, 245, 245, 0.9);
+    --cor-hover: rgba(30, 47, 60, 0.6);
 
     --font-primaria: 'Krona One', sans-serif;
     --font-secundaria: 'Montserrat', sans-serif;
 }
+
 
 * {
     margin: 0;
@@ -17,12 +19,20 @@
 
 html, body {
     box-sizing: border-box;
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria)
+    background: linear-gradient(to bottom right, var(--cor-primaria), #3C5979);
+    color: var(--cor-secundaria);
+    height: 100%;
+}
+
+.container{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .cabecalho {
     padding: 2% 0% 0% 15%;
+    background-color: var(--cor-terciaria-transparente);
 }
 
 .cabecalho__menu {
@@ -60,6 +70,13 @@ html, body {
 .apresentacao__conteudo__titulo {
     font-size: 2.25rem;
     font-family: var(--font-primaria);
+}
+
+
+.apresentacao__conteudo__titulo__laranja {
+    font-size: 2.25rem;
+    font-family: var(--font-primaria);
+    color: var(--cor-terciaria);
 }
 
 .apresentacao__conteudo__texto {
@@ -109,14 +126,18 @@ html, body {
 }
 
 .apresentacao__imagem {
-    width: 35%;
+    width: 40%;
+}
+
+.projeto__imagem{
+    display: flex;
+    width: 50%;
 }
 
 .rodape {
-    margin-top: 6.5em;
     padding: 24px;
     color: var(--cor-primaria);
-    background-color: var(--cor-terciaria);
+    background-color: var(--cor-terciaria-transparente);
     text-align: center;
     font-family: var(--font-secundaria);
     font-size: 1.5rem;
@@ -127,10 +148,16 @@ html, body {
     
     .cabecalho {
         padding: 5%;
+        width: auto;
     }
 
     .cabecalho__menu {
-        justify-content: center;
+        display: block;
+        justify-content:space-around;
+    }
+    .cabecalho__menu__link {
+        padding: 3%;
+        justify-content:center;
     }
     
     .apresentacao {
@@ -140,6 +167,10 @@ html, body {
 
     .apresentacao__conteudo {
         width: auto;
+    }
+
+    .apresentacao__imagem {
+        width: 60%;
     }
     
 }
