@@ -127,11 +127,15 @@ html, body {
 
 .apresentacao__imagem {
     width: 40%;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
 }
 
 .projeto__imagem{
     display: flex;
     width: 50%;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
 }
 
 .rodape {
